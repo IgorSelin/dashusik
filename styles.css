@@ -46,3 +46,12 @@ button:hover {
     color: #fff;
   }
 }
+
+.avatar{
+    margin: 30px auto;
+    display: block;
+    opacity: 0;
+    height: 310px;
+    transition: 0.3s linear all;
+    border: 50%;
+}

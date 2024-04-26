@@ -4,25 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Document</title>
+    <title>Тест на IQ</title>
   </head>
   <body>
     <div class="flex">
-      <h1>В Дашусік шикарне почуття гумору?</h1>
+      <h1>В Дашусік найшикарніше почуття гумору?</h1>
     </div>
-
-    <button
-      id="yesbtn"
-      onclick="alert('Ну це і так було риторичне питання!!! 😊')"
-    >
-      Таак&#128149;
-    </button>
+    <button id="yesbtn" onclick="onYesClick()">Таак&#128149;</button>
     <button
       onmousemove="random(this)"
+      id="nobtn"
       onclick="alert(`Як ти зміг все ж таки сюди клікнути? 😢`)"
     >
       Нєєа&#128148;
     </button>
+    <img src="./assets/avatar.jpg" class="avatar" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>

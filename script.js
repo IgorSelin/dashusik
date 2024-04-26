@@ -38,3 +38,15 @@ function adjustH(rH) {
   else if (rH >= WIDTH - BTN_H_MAR) rH = WIDTH - BTN_H_MAR;
   return rH;
 }
+
+function onYesClick() {
+  alert("Ну це і так було риторичне питання!!! 😊");
+  const avatar = document.querySelector(".avatar");
+  avatar.style.opacity = 1;
+
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+}
