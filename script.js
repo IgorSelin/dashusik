@@ -11,19 +11,12 @@ function random(nobtn) {
   //Adjusting sizes for preventing offscreens
   randomW = adjustW(randomW);
   randomH = adjustH(randomH);
+  console.log('fired!')
   nobtn.style.top = `${randomH}px`;
   nobtn.style.right = `${randomW}px`;
   count++;
   if (count >= 10) {
     document.getElementById("yesbtn").classList.add("ics");
-    let interval = setInterval(() => {
-      nobtn.style.opacity = count / 10;
-      count--;
-      if (count <= 0) {
-        nobtn.style.display = "none";
-        clearInterval(interval);
-      }
-    }, 10);
   }
 }
 
@@ -47,6 +40,6 @@ function onYesClick() {
   confetti({
     particleCount: 100,
     spread: 70,
-    origin: { y: 0.6 }
+    origin: { y: 0.6 },
   });
 }
