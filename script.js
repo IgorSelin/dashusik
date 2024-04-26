@@ -33,7 +33,7 @@ function adjustH(rH) {
 }
 
 function onYesClick() {
-  alert("Ну це і так було риторичне питання!!! 😊");
+  alert("Ви успішно здали тест на IQ, вітаю!!! 😊");
   const avatar = document.querySelector(".avatar");
   avatar.style.opacity = 1;
 

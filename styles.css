@@ -3,7 +3,7 @@ body {
   background: #893a8e;
   color: #eee;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: monospace
 }
 .flex {
   display: flex;
