@@ -36,6 +36,8 @@ function onYesClick() {
   alert("Ви успішно здали тест на IQ, вітаю!!! 😊");
   const avatar = document.querySelector(".avatar");
   avatar.style.opacity = 1;
+  const  noBtn = document.querySelector('#nobtn')
+  noBtn.style.display = 'none'
 
   confetti({
     particleCount: 100,
